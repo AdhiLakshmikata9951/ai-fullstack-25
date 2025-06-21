@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     .container {
+            display: grid;
+            grid-template-rows: 100px 1fr 50px;
+            grid-template-columns: 200px 1fr;
+            background-color: burlywood;
+            height: 100vh;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .header {
+            grid-column: 1 / 3;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            background-color: honeydew;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-column: 1 / 3;
+            background-color: honeydew;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">
+            <div>Sidebar  1</div>
+            <div>Sidebar 2</div>
+            <div>Sidebar 3</div>
+        </div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+
